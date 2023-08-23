@@ -21,7 +21,6 @@ public class DesafioJava1 {
         if (dia >= 1 && dia <= 31 && mes >= 1 && mes <= 12 && anio >= 1900 && anio <= 2099) {
             boolean esBisiesto = (anio % 4 == 0 && anio % 100 != 0) || (anio % 400 == 0);
             if (mes == 2 && ((dia > 29 && !esBisiesto) || (dia > 28 && esBisiesto))) {
-             //
             	System.out.println("La fecha ingresada es incorrecta.");
             } else {
                 System.out.println("La fecha ingresada es correcta.");
